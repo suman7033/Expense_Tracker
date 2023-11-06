@@ -1,0 +1,30 @@
+/* Define the grid container */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Style each section */
+  .section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Add specific styles for each component */
+  .about {
+    background-color: #ffeedd;
+  }
+  
+  .home {
+    background-color: #d3f3dd;
+  }
+  
+  .contact {
+    background-color: #f3d3d3;
+  }
+  
+  /* Add more component-specific styles as needed */
+  
