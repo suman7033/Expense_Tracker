@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.right {
+    flex: 1px; /* To allow each line to take equal space and push apart */
+    padding: 10px;
+    background-color: #f1abab;
+    border-radius: 15px;
+  }
+.left{
+    flex: 1px;
+    padding: 10px;
+}
+  
+.button{
+    color: rgb(10, 111, 243);
+    border: none;
+    border-radius: 20px;
+}

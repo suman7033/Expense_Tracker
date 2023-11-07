@@ -10,12 +10,14 @@ import About from "./components/About/About";
 import Products from "./components/Products/Products";
 import Login from "./components/Login/Login";
 import Profile from "./components/Profile/Profile";
+import welcome from "./components/Welcome/welcome";
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
     <Navbar/>
+    <welcome/>
       <Routes>
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>

@@ -1,10 +1,13 @@
 import React from 'react'
+import './products.css';
+import Welcome from '../Welcome/welcome';
 
 const Products = () => {
   return (
-    <div>
-      <h1>Product</h1>
-    </div>
+    <>
+    <Welcome/>
+     <h2>Products</h2>
+    </>
   )
 }
 

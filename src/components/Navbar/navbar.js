@@ -1,10 +1,5 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import Home from '../Home/Home'
-import About from '../About/About'
-import Products from '../Products/Products'
-import Login from '../Login/Login'
-import Profile from '../Profile/Profile'
 import './navbar.css'
 
 const navbar = () => {
