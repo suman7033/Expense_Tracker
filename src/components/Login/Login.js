@@ -45,8 +45,11 @@ const Login = () => {
       }
      })
      .then((data)=>{
+       
       alert("sucessfully Login");
+      console.log("idToken",data.idToken);
       Navigate('/products');
+      localStorage.setItem("tokenId",data.idToken);
      })
      .catch(err =>{
        alert(err.message);
