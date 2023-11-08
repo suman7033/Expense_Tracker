@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './Login.css'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 const Login = () => {
    const [isLogin,setIsLogin]=useState(true);
@@ -10,6 +10,10 @@ const Login = () => {
   const passwordInputRef=useRef();
   const switchHandler=()=>{
       setIsLogin((prevState)=> !prevState);
+  }
+  const ForgotHandler=()=>{
+      alert("sure' you want to forgot!")
+
   }
   const submitHandler=(e)=>{
      e.preventDefault();
@@ -70,6 +74,7 @@ const Login = () => {
               <label htmlFor='password'><b>Your Password</b></label>
               <input type='password' id='password' required ref={passwordInputRef}></input>
            </div>
+           <b className='forgot'><Link to='/forgotPassword'>Forgot Password?</Link></b>
            <div className='actions'>
              <button>{isLogin ? 'login' : 'create new login'}</button>
              <button type='button' className='toggle' onClick={switchHandler}>Create new Account</button>

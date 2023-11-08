@@ -6,6 +6,7 @@ const navbar = () => {
   const logoutHandler=()=>{
     localStorage.removeItem("idToken");
     localStorage.removeItem("tokenId");
+    localStorage.removeItem("email");
 }
   return (
      <div>

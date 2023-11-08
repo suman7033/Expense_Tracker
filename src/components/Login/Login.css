@@ -69,3 +69,11 @@
     background-color: transparent;
     color: #f9f7f9;
   }
+.Fbtn{
+  border: none;
+  border-radius: 5px;
+  color: red;
+}
+.forgot{
+  background-color: rgb(38, 27, 27);
+}
