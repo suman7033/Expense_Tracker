@@ -19,3 +19,7 @@
     border: none;
     border-radius: 20px;
 }
+.verifyBtn{
+   border-radius: 10px;
+   margin: 10px;
+}

@@ -10,7 +10,6 @@ import About from "./components/About/About";
 import Products from "./components/Products/Products";
 import Login from "./components/Login/Login";
 import Profile from "./components/Profile/Profile";
-import UserDetails from "./components/UserDetail/UserDetails";
 
 const App = () => {
   return (
@@ -23,7 +22,6 @@ const App = () => {
         <Route path="/products" element={<Products/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
-        <Route path="/userDetails" element={<UserDetails/>}></Route>
       </Routes>
     </BrowserRouter>
     </>

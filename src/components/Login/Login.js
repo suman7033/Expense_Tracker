@@ -50,6 +50,8 @@ const Login = () => {
       console.log("idToken",data.idToken);
       Navigate('/products');
       localStorage.setItem("tokenId",data.idToken);
+      localStorage.setItem("idToken",data.idToken);
+      localStorage.setItem("email", data.email);
      })
      .catch(err =>{
        alert(err.message);
