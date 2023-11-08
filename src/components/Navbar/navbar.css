@@ -27,4 +27,7 @@
   }
   
   /* Add more component-specific styles as needed */
-  
+.logoutBtn{
+   border: none;
+   background-color: rgba(15, 13, 13, 0.137);
+}  

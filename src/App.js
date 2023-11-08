@@ -12,6 +12,7 @@ import Login from "./components/Login/Login";
 import Profile from "./components/Profile/Profile";
 
 const App = () => {
+    
   return (
     <>
     <BrowserRouter>

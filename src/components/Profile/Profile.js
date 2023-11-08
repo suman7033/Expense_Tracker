@@ -26,7 +26,7 @@ const Profile = () => {
            }
          )
          if(!getData.ok){
-           alert("something wronge");
+           //alert("something wronge");
            throw new Error('Network response was not ok');
          }
          const data=await getData.json();

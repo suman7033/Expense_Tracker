@@ -3,6 +3,10 @@ import {Link} from "react-router-dom";
 import './navbar.css'
 
 const navbar = () => {
+  const logoutHandler=()=>{
+    localStorage.removeItem("idToken");
+    localStorage.removeItem("tokenId");
+}
   return (
      <div>
         <ul className='nav h4 border-4 p-2 border-primary position-relative m-8 fs-2 bg-dark border-bottom border-bottom border-body' data-bs-theme="dark">
@@ -17,6 +21,7 @@ const navbar = () => {
           </li>&nbsp;&nbsp;&nbsp;
           <li><Link className="nav-link text-light bg-dark" aria-current="page" to="/profile">Profile</Link>
           </li>&nbsp;&nbsp;&nbsp;
+          <button className='logoutBtn'onClick={logoutHandler}>Logout</button>
         </ul>
      </div>
   )
